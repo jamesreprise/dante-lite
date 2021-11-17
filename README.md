@@ -1,8 +1,11 @@
 # Dante-lite
 ## Installation
-All in src/ :
 ```
-pip install -r requirements.txt
+git clone https://github.com/jamesreprise/dante-lite.git
+cd dante-lite
+python3 -m venv .
+python3 -m pip install -r requirements.txt
+cd src
 cp sample_config.toml config.toml
 ```
 
