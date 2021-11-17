@@ -1,4 +1,4 @@
-# Dante
+# Dante-lite
 ## Installation
 All in src/ :
 ```
@@ -24,8 +24,8 @@ After=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 -u /home/dante-lite/src/bot.py
-WorkingDirectory=/home/dante-lite/src
+ExecStart=/usr/bin/python3 -u /home/dante/src/bot.py
+WorkingDirectory=/home/dante/src
 Restart=always
 TimeoutStopSec=1
 StandardOutput=journal
