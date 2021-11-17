@@ -32,7 +32,7 @@ class Panopticon(commands.Cog):
         if before.self_mute != after.self_mute and after.self_mute:
             self.log(f"({member.guild.name} - {after.channel.name}) {member.name}#{member.discriminator} muted.")
         if before.self_deaf != after.self_deaf and after.self_deaf:
-            self.log(f"({member.guild.name} - {after.channel.name}) {member.name}#{member.discriminator} defeaned.")
+            self.log(f"({member.guild.name} - {after.channel.name}) {member.name}#{member.discriminator} deafened.")
         if before.self_video != after.self_video and after.self_video:
             self.log(f"({member.guild.name} - {after.channel.name}) {member.name}#{member.discriminator} enabled video.")
         if before.mute != after.mute and not after.mute:
