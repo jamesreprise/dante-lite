@@ -1,0 +1,28 @@
+# Config file w/ secrets
+config.toml
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+include/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-selfcheck.json
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Misc
+.DS_Store
+pyvenv.cfg
+.vscode/settings.json

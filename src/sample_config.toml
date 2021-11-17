@@ -1,0 +1,7 @@
+[ids]
+owner = ""
+
+[keys]
+discord_bot_token = ""
+last_fm_api_key = ""
+wolfram_token = ""
