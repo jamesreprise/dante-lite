@@ -23,8 +23,9 @@ class NowPlaying(commands.Cog):
 
         Syntax: .np <User> """
 
-        for subject in ctx.message.mentions:
-            await ctx.send(embed=await self.spotify_embed(subject))
+        if ctx.message.mentions:
+            for subject in ctx.message.mentions:
+                await ctx.send(embed=await self.spotify_embed(subject))
         else:
             await ctx.send(embed=await self.spotify_embed(ctx.message.author))
     

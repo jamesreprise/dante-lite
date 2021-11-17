@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#./usr/bin/env python3
 import discord
 import toml
 from discord.ext import commands
@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 class Dante(commands.Bot):
     def __init__(self, config):
         self.config = config
-        super().__init__(command_prefix = self.prefix, owner_id = config['ids']['owner'])
+        super().__init__(command_prefix = self.prefix, owner_id = config['ids']['owner'], intents=discord.Intents().all())
         self.token = self.config['keys']['discord_bot_token']
         self.prefixes = {}
         self.silent_guilds = []
@@ -18,9 +18,9 @@ class Dante(commands.Bot):
  
     def prefix(self, bot, message):
         if not message.guild:
-            return "!"
+            return "."
         else:
-            return self.prefixes.get(message.guild.id, "!")
+            return self.prefixes.get(message.guild.id, ".")
 
 config = toml.load("config.toml")
 bot = Dante(config)

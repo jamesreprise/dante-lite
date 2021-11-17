@@ -1,5 +1,3 @@
-import psycopg2
-from psycopg2 import sql
 from discord.ext import commands
 from datetime import datetime, timedelta
 
