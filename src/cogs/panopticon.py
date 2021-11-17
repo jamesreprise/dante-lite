@@ -58,7 +58,6 @@ class Panopticon(commands.Cog):
     @commands.Cog.listener()
     async def on_member_join(self, user):
         self.log(f"({user.guild.name}) {user.name}#{user.discriminator} joined the server.")
-        self.add_guild_user_if_not_exists(user)
 
     @commands.Cog.listener()
     async def on_member_remove(self, user):
