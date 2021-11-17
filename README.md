@@ -24,7 +24,7 @@ After=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 -u /home/dante/src/bot.py
+ExecStart=/home/dante/bin/python3 -u /home/dante/src/bot.py
 WorkingDirectory=/home/dante/src
 Restart=always
 TimeoutStopSec=1
