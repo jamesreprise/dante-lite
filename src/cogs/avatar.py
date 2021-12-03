@@ -6,7 +6,7 @@ class Avatar(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def avatar(self, ctx, argument):
+    async def avatar(self, ctx):
         """ Prints out user avatars. 
 
         Syntax: .avatar <User>"""
